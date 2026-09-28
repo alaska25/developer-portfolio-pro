@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Developer Portfolio Pro — Adyoolau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Alex Morgan</a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a class="btn" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <span class="status"><i></i>Open to new projects</span>
+      <h1>I build fast, accessible web apps that people enjoy using.</h1>
+      <p class="lede">Full-stack developer with seven years of experience shipping products for startups and small teams, from first prototype to production.</p>
+      <div class="actions">
+        <a class="btn" href="#work">See my work</a>
+        <a class="btn ghost" href="#contact">Download résumé</a>
+      </div>
+    </div>
+    <div class="code" aria-label="Developer profile snippet">
+      <div class="bar" aria-hidden="true"><span></span><span></span><span></span></div>
+<pre><span class="c">// profile.js</span>
+<span class="k">export const</span> developer = {
+  name: <span class="s">"Alex Morgan"</span>,
+  role: <span class="s">"Full-stack developer"</span>,
+  focus: [<span class="s">"React"</span>, <span class="s">"Node"</span>, <span class="s">"Postgres"</span>],
+  available: <span class="v">true</span>,
+  response: <span class="s">"within a day"</span>,
+};</pre>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="head">
+      <h2>Selected work</h2>
+      <p>Four recent projects, each built end to end.</p>
+    </div>
+    <div class="projects">
+      <article class="card wide">
+        <div class="thumb t1" role="img" aria-label="Abstract gold glow on navy"></div>
+        <div class="body">
+          <h3>Ledgerly, invoicing for freelancers</h3>
+          <p>A billing app that cut invoice creation from ten minutes to under one. Built the full product, including Stripe payments and PDF export.</p>
+          <ul class="tags"><li>React</li><li>Node</li><li>Stripe</li><li>Postgres</li></ul>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb t2" role="img" aria-label="Diagonal line pattern"></div>
+        <div class="body">
+          <h3>Trailhead, hiking route planner</h3>
+          <p>Offline-first mobile web app with map tiles cached for use without signal.</p>
+          <ul class="tags"><li>TypeScript</li><li>PWA</li><li>Mapbox</li></ul>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb t3" role="img" aria-label="Warm gold light in the corner"></div>
+        <div class="body">
+          <h3>Pulse, team analytics dashboard</h3>
+          <p>Real-time charts for 40,000 daily events, with sub-second filtering.</p>
+          <ul class="tags"><li>Next.js</li><li>D3</li><li>Redis</li></ul>
+        </div>
+      </article>
+      <article class="card wide">
+        <div class="thumb t4" role="img" aria-label="Fine grid pattern"></div>
+        <div class="body">
+          <h3>Kit, open-source component library</h3>
+          <p>Accessible UI components used in more than 300 projects, with full keyboard support and documentation.</p>
+          <ul class="tags"><li>React</li><li>Tailwind</li><li>Storybook</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="head">
+      <h2>What I work with</h2>
+      <p>Tools I reach for first, and why.</p>
+    </div>
+    <div class="stack">
+      <div><h3>Frontend</h3><p>React, TypeScript, Tailwind, and plain CSS when it's enough. Semantic HTML first.</p></div>
+      <div><h3>Backend</h3><p>Node, Express, PostgreSQL, and REST or GraphQL APIs with clear contracts.</p></div>
+      <div><h3>Delivery</h3><p>Git, CI with GitHub Actions, Vercel and Docker, plus tests where they pay off.</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="head">
+      <h2>Experience</h2>
+      <p>Where I've worked and what I shipped.</p>
+    </div>
+    <div class="jobs">
+      <div class="job">
+        <time>2023 – Present</time>
+        <div><h3>Senior Developer, Northwind Labs</h3><p>Lead a team of four. Rebuilt the checkout flow and raised conversion by 18%.</p></div>
+      </div>
+      <div class="job">
+        <time>2020 – 2023</time>
+        <div><h3>Full-stack Developer, Brightside</h3><p>Shipped a customer portal used by 12,000 people and moved the stack to TypeScript.</p></div>
+      </div>
+      <div class="job">
+        <time>2018 – 2020</time>
+        <div><h3>Frontend Developer, Studio Ohm</h3><p>Built marketing sites and design systems for agency clients.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-bottom:0">
+    <div class="contact">
+      <h2>Have a project in mind?</h2>
+      <p>Tell me what you're building and when you need it. I reply to every message within one working day.</p>
+      <a class="btn" href="mailto:hello@example.com">Email me</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© <span id="yr">2026</span> Alex Morgan. Built with Adyoolau Developer Portfolio Pro.</span>
+    <button class="toggle" id="theme" type="button" aria-label="Switch color theme">Switch theme</button>
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
