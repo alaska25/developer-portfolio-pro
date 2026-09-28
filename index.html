@@ -3,13 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Developer Portfolio Pro — Adyoolau</title>
+<title>Alex Morgan | Full-stack developer</title>
+<meta name="description" content="Alex Morgan is a full-stack developer who builds fast, accessible web apps with React, Node and Postgres. Available for new projects.">
+<meta name="theme-color" content="#f7f4ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1024" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://your-domain.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Social sharing: replace your-domain.com with your real address. Image URLs must be absolute. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alex Morgan | Full-stack developer">
+<meta property="og:description" content="I build fast, accessible web apps that people enjoy using.">
+<meta property="og:url" content="https://your-domain.com/">
+<meta property="og:image" content="https://your-domain.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alex Morgan",
+  "jobTitle": "Full-stack developer",
+  "url": "https://your-domain.com/",
+  "email": "mailto:hello@your-domain.com",
+  "sameAs": ["https://github.com/your-username", "https://www.linkedin.com/in/your-username"]
+}
+</script>
+
+<!-- Applies a saved theme before first paint, so there is no flash. -->
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header>
   <div class="wrap">
     <nav aria-label="Main">
@@ -24,7 +56,7 @@
   </div>
 </header>
 
-<main id="top" class="wrap">
+<main id="top" class="wrap" tabindex="-1">
   <div class="hero">
     <div>
       <span class="status"><i></i>Open to new projects</span>
@@ -32,7 +64,7 @@
       <p class="lede">Full-stack developer with seven years of experience shipping products for startups and small teams, from first prototype to production.</p>
       <div class="actions">
         <a class="btn" href="#work">See my work</a>
-        <a class="btn ghost" href="#contact">Download résumé</a>
+        <a class="btn ghost" href="assets/resume.pdf" download="Alex-Morgan-Resume.pdf">Download résumé</a>
       </div>
     </div>
     <div class="code" aria-label="Developer profile snippet">
@@ -57,7 +89,7 @@
       <article class="card wide">
         <div class="thumb t1" role="img" aria-label="Abstract gold glow on navy"></div>
         <div class="body">
-          <h3>Ledgerly, invoicing for freelancers</h3>
+          <h3><a href="https://example.com/ledgerly" target="_blank" rel="noopener">Ledgerly, invoicing for freelancers</a></h3>
           <p>A billing app that cut invoice creation from ten minutes to under one. Built the full product, including Stripe payments and PDF export.</p>
           <ul class="tags"><li>React</li><li>Node</li><li>Stripe</li><li>Postgres</li></ul>
         </div>
@@ -65,7 +97,7 @@
       <article class="card">
         <div class="thumb t2" role="img" aria-label="Diagonal line pattern"></div>
         <div class="body">
-          <h3>Trailhead, hiking route planner</h3>
+          <h3><a href="https://example.com/trailhead" target="_blank" rel="noopener">Trailhead, hiking route planner</a></h3>
           <p>Offline-first mobile web app with map tiles cached for use without signal.</p>
           <ul class="tags"><li>TypeScript</li><li>PWA</li><li>Mapbox</li></ul>
         </div>
@@ -73,7 +105,7 @@
       <article class="card">
         <div class="thumb t3" role="img" aria-label="Warm gold light in the corner"></div>
         <div class="body">
-          <h3>Pulse, team analytics dashboard</h3>
+          <h3><a href="https://example.com/pulse" target="_blank" rel="noopener">Pulse, team analytics dashboard</a></h3>
           <p>Real-time charts for 40,000 daily events, with sub-second filtering.</p>
           <ul class="tags"><li>Next.js</li><li>D3</li><li>Redis</li></ul>
         </div>
@@ -81,7 +113,7 @@
       <article class="card wide">
         <div class="thumb t4" role="img" aria-label="Fine grid pattern"></div>
         <div class="body">
-          <h3>Kit, open-source component library</h3>
+          <h3><a href="https://example.com/kit" target="_blank" rel="noopener">Kit, open-source component library</a></h3>
           <p>Accessible UI components used in more than 300 projects, with full keyboard support and documentation.</p>
           <ul class="tags"><li>React</li><li>Tailwind</li><li>Storybook</li></ul>
         </div>
@@ -108,15 +140,15 @@
     </div>
     <div class="jobs">
       <div class="job">
-        <time>2023 – Present</time>
+        <time datetime="2023">2023 – Present</time>
         <div><h3>Senior Developer, Northwind Labs</h3><p>Lead a team of four. Rebuilt the checkout flow and raised conversion by 18%.</p></div>
       </div>
       <div class="job">
-        <time>2020 – 2023</time>
+        <time datetime="2020">2020 – 2023</time>
         <div><h3>Full-stack Developer, Brightside</h3><p>Shipped a customer portal used by 12,000 people and moved the stack to TypeScript.</p></div>
       </div>
       <div class="job">
-        <time>2018 – 2020</time>
+        <time datetime="2018">2018 – 2020</time>
         <div><h3>Frontend Developer, Studio Ohm</h3><p>Built marketing sites and design systems for agency clients.</p></div>
       </div>
     </div>
@@ -126,13 +158,17 @@
     <div class="contact">
       <h2>Have a project in mind?</h2>
       <p>Tell me what you're building and when you need it. I reply to every message within one working day.</p>
-      <a class="btn" href="mailto:hello@example.com">Email me</a>
+      <a class="btn" href="mailto:hello@your-domain.com">Email me</a>
+      <ul class="links" aria-label="Elsewhere">
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </div>
   </section>
 
   <footer>
-    <span>© <span id="yr">2026</span> Alex Morgan. Built with Adyoolau Developer Portfolio Pro.</span>
-    <button class="toggle" id="theme" type="button" aria-label="Switch color theme">Switch theme</button>
+    <span>© <span id="yr">2026</span> Alex Morgan. All rights reserved.</span>
+    <button class="toggle" id="theme" type="button" aria-pressed="false">Dark mode</button>
   </footer>
 </main>
 

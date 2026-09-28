@@ -14,6 +14,9 @@ h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-seri
 a{color:inherit}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+main:focus{outline:none}
+.skip{position:absolute;left:12px;top:-60px;z-index:20;padding:10px 18px;border-radius:999px;background:var(--gold);color:var(--gold-ink);font-weight:600;text-decoration:none;transition:top .15s}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
 
 /* nav */
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;padding-top:12px}
@@ -21,7 +24,7 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:12px;paddi
 .brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;text-decoration:none}
 nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
 nav ul a{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;font-size:15px;color:var(--muted);transition:color .2s,background .2s}
-nav ul a:hover{color:var(--text);background:var(--line)}
+nav ul a:hover,nav ul a[aria-current]{color:var(--text);background:var(--line)}
 @media (max-width:640px){nav ul li:not(:last-child){display:none}}
 .btn{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 24px;border-radius:999px;background:var(--gold);color:var(--gold-ink);font-weight:600;text-decoration:none;border:0;transition:transform .15s,filter .2s}
 .btn:hover{filter:brightness(1.08)}.btn:active{transform:scale(.98)}
@@ -53,8 +56,13 @@ h2{font-size:clamp(30px,4.5vw,46px);font-weight:700}
 
 .projects{display:grid;gap:20px}
 @media (min-width:720px){.projects{grid-template-columns:1fr 1fr}.projects .wide{grid-column:1/-1}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:12px;display:flex;flex-direction:column;transition:border-color .25s}
-.card:hover{border-color:color-mix(in srgb,var(--gold) 60%,transparent)}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:12px;display:flex;flex-direction:column;transition:border-color .25s}
+.card:hover,.card:focus-within{border-color:color-mix(in srgb,var(--gold) 60%,transparent)}
+.card h3 a{text-decoration:none}
+.card h3 a::after{content:"";position:absolute;inset:0;border-radius:26px}
+.card h3 a:hover{color:var(--gold-text)}
+.card h3 a:focus-visible{outline:none}
+.card:has(h3 a:focus-visible){outline:2px solid var(--gold);outline-offset:3px}
 .thumb{aspect-ratio:16/9;border-radius:16px;position:relative;overflow:hidden}
 .wide .thumb{aspect-ratio:21/8}
 .t1{background:radial-gradient(circle at 20% 30%,#e2c25a 0,transparent 45%),linear-gradient(135deg,#16224a,#0a1024)}
@@ -84,7 +92,14 @@ h2{font-size:clamp(30px,4.5vw,46px);font-weight:700}
 .contact{background:var(--surface);border:1px solid var(--line);border-radius:32px;padding:clamp(32px,6vw,72px);text-align:center;margin-bottom:40px}
 .contact h2{margin-bottom:14px}
 .contact p{margin:0 auto 28px;color:var(--muted);max-width:30em}
+.links{display:flex;justify-content:center;gap:22px;list-style:none;margin:26px 0 0;padding:0}
+.links a{color:var(--gold-text);font-weight:500;text-underline-offset:4px}
+.links a:hover{text-decoration-thickness:2px}
 footer{padding:0 0 40px;color:var(--muted);font-size:15px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 14px;font:inherit;cursor:pointer}
 .toggle:hover{color:var(--text);border-color:var(--gold)}
+.notfound{min-height:70vh;display:grid;align-content:center;justify-items:start;gap:16px;padding:64px 0}
+.notfound p{margin:0;color:var(--muted);max-width:28em}
+.notfound .actions{margin-top:8px}
+@media print{header,.toggle,.skip{display:none}body{background:#fff;color:#000}.card,.stack div,.contact{break-inside:avoid}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}

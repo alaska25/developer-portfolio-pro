@@ -1,0 +1,36 @@
+Developer Portfolio Pro: Template License
+Copyright (c) 2026 Adyoolau. All rights reserved.
+
+By purchasing and downloading this template you receive a non-exclusive,
+non-transferable license on the terms below. One license covers one finished
+website.
+
+YOU MAY
+- Use the template for one website, either your own or one built for a client.
+- Modify the template in any way to suit that website.
+- Use the finished website commercially.
+- Remove any credit or attribution. None is required.
+
+YOU MAY NOT
+- Resell, redistribute, sublicense, share or give away the template files, in
+  original or modified form, whether free or paid.
+- Include the template, or a substantial part of it, in another template,
+  theme, starter kit, UI kit or product that others can download or buy.
+- Publish the template's source files in a public place where others can
+  download them as a template (for example, a public repository marked as a
+  template or a file-sharing site).
+- Claim to be the original author of the template.
+
+A finished website that visitors view in their browser is not a redistribution.
+Publishing that website's source code in a repository is allowed, as long as it
+is not offered as a template for others to reuse.
+
+You need a separate license for each additional website.
+
+NO WARRANTY
+The template is provided "as is", without warranty of any kind. The author is
+not liable for any damages arising from its use.
+
+Third-party items: Bricolage Grotesque and Instrument Sans are loaded from
+Google Fonts and are licensed under the SIL Open Font License. The sample
+name, projects, companies and figures are fictional placeholders.
